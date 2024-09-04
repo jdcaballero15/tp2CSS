@@ -1,0 +1,127 @@
+/* 4.1 Cabecera de nuestra página */
+section p {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+section blockquote {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+}
+
+/* 4.2 Propiedades de Texto en CSS */
+section:nth-of-type(2) p {
+    font-size: 16px;
+    text-align: left;
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+section:nth-of-type(2) blockquote {
+    font-size: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: overline;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-right: 5px solid #bbb;
+}
+
+/* 4.3 Propiedades de Caja en CSS */
+.box {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.highlighted {
+    border: 3px solid #000;
+    background-color: #f0f0f0;
+}
+
+/* 4.4 Posición Relativa en CSS Y Posición Absoluta en CSS */
+.relative-container {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0;
+    padding: 10px;
+}
+
+/* 4.5 Media Queries en CSS */
+@media (max-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* 4.6 Principios de Grid en CSS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 4.7 Principios de Animaciones en CSS */
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    transition: background-color 0.5s;
+}
+
+.animacion:hover {
+    background-color: #0f0;
+}
+
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
